@@ -1,5 +1,3 @@
-//import org.modelcatalogue.spreadsheet.builder.poi.PoiSpreadsheetBuilder
-
 pipeline {
     agent any
     tools {
@@ -16,26 +14,18 @@ pipeline {
         }
         stage('test') {
             steps {
-              
-                 bat "mvn install"
-                
+                bat "mvn install"
             }
         }
         stage('Excel erstellen'){
             steps{
                 echo 'PetruTester'
 
+                // Fügen Sie hier den Groovy-Code zur Erstellung der Excel-Datei hinzu
+                // Der Groovy-Code sollte direkt in dieser Stage stehen, nachdem Sie die erforderlichen Schritte definiert haben.
             }
         }
-    }
-}
 
-
-
-pipeline {
-    agent any
-
-    stages {
         stage('Groovy Skript ausführen') {
             steps {
                 script {
