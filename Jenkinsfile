@@ -40,7 +40,7 @@ pipeline {
             steps {
                 script {
                     // Hier den Pfad zur Groovy-Datei in Ihrem Projekt einfügen
-                    def groovyScriptPath = 'C:\Users\petru\Desktop\ExcelTest'
+                    def groovyScriptPath = 'C:\\Users\\petru\\Desktop\\ExcelTest'
 
                     // Shell-Befehl, um das Groovy-Skript auszuführen
                     sh "groovy ${groovyScriptPath}"
