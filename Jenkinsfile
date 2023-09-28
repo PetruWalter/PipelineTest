@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Excel erstellen'){
             steps{
-                echo 'PetruTest'
+                echo 'PetruTester'
 
             }
         }
