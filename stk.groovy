@@ -1,7 +1,7 @@
 @Grab(group='org.apache.poi', module='poi', version='5.0.0')
 @Grab(group='org.apache.poi', module='poi-ooxml', version='5.0.0')
 
-import org.apache.poi.ss.usermodel.*
+ import org.apache.poi.ss.usermodel.*
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
 
 // Erstelle eine neue Arbeitsmappe (Workbook)
@@ -32,4 +32,4 @@ FileOutputStream fileOut = new FileOutputStream("Beispiel.xlsx")
 workbook.write(fileOut)
 fileOut.close()
 
-println("Die Excel-Datei wurde erfolgreich erstellt.")
+println("Die Excel-Datei wurde erfolgreich erstellt.")   
