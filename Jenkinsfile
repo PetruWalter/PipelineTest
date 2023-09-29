@@ -38,6 +38,7 @@ stage('Excel-Datei erstellen') {
 }
 post {
     success {
+        echo 'PetruTester'
         // Hier archivieren Sie die Excel-Datei, damit sie später heruntergeladen werden kann
         archiveArtifacts artifacts: 'Beispiel.xlsx', allowEmptyArchive: true
     }
