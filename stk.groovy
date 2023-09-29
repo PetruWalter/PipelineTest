@@ -1,7 +1,7 @@
 @Grab(group='org.apache.poi', module='poi', version='5.0.0')
 @Grab(group='org.apache.poi', module='poi-ooxml', version='5.0.0')
 
- import org.apache.poi.ss.usermodel.*
+import org.apache.poi.ss.usermodel.*
 import org.apache.poi.xssf.usermodel.XSSFWorkbook
 
 // Erstelle eine neue Arbeitsmappe (Workbook)
