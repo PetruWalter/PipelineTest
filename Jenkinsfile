@@ -30,19 +30,6 @@ import org.modelcatalogue.spreadsheet.builder.poi.PoiSpreadsheetBuilder
     }
 }*/
 
-stage('Excel-Datei erstellen') {
-    steps {
-        // Hier führen Sie Ihr Groovy-Skript aus, um die Excel-Datei zu erstellen
-        sh 'groovy dein-skript.groovy'
-    }
-}
-post {
-    success {
-        echo 'PetruTester'
-        // Hier archivieren Sie die Excel-Datei, damit sie später heruntergeladen werden kann
-        archiveArtifacts artifacts: 'Beispiel.xlsx', allowEmptyArchive: true
-    }
-}
 
 pipeline {
     agent any
